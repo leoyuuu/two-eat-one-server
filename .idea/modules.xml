@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/client.iml" filepath="$PROJECT_DIR$/.idea/modules/client/client.iml" group="client" />
+      <module fileurl="file://$PROJECT_DIR$/client_jframe/client_jframe.iml" filepath="$PROJECT_DIR$/client_jframe/client_jframe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client_jframe/client_jframe_main.iml" filepath="$PROJECT_DIR$/.idea/modules/client_jframe/client_jframe_main.iml" group="client_jframe" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client_jframe/client_jframe_test.iml" filepath="$PROJECT_DIR$/.idea/modules/client_jframe/client_jframe_test.iml" group="client_jframe" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/client_main.iml" filepath="$PROJECT_DIR$/.idea/modules/client/client_main.iml" group="client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/client_test.iml" filepath="$PROJECT_DIR$/.idea/modules/client/client_test.iml" group="client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/proto/proto.iml" filepath="$PROJECT_DIR$/.idea/modules/proto/proto.iml" group="proto" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/proto/proto_main.iml" filepath="$PROJECT_DIR$/.idea/modules/proto/proto_main.iml" group="proto" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/proto/proto_test.iml" filepath="$PROJECT_DIR$/.idea/modules/proto/proto_test.iml" group="proto" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/server.iml" filepath="$PROJECT_DIR$/.idea/modules/server/server.iml" group="server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/server_main.iml" group="server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/server/server_test.iml" group="server" />
+      <module fileurl="file://$PROJECT_DIR$/two-eat-one-server.iml" filepath="$PROJECT_DIR$/two-eat-one-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client_jframe/two-eat-one-server-client_jframe.iml" filepath="$PROJECT_DIR$/.idea/modules/client_jframe/two-eat-one-server-client_jframe.iml" group="client_jframe" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/utils.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/utils.iml" group="utils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/utils_main.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/utils_main.iml" group="utils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/utils_test.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/utils_test.iml" group="utils" />
+    </modules>
+  </component>
+</project>

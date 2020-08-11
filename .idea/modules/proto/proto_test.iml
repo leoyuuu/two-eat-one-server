@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":proto:test" external.linked.project.path="$MODULE_DIR$/../../../proto" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="two-eat-one-server" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_9">
+    <output-test url="file://$MODULE_DIR$/../../../proto/out/test/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../proto/build/extracted-include-protos/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../proto/build/extracted-include-protos/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../proto/build/extracted-protos/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../proto/build/extracted-protos/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../proto/build/generated/source/proto/test/java" />
+    <content url="file://$MODULE_DIR$/../../../proto/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../proto/src/test/java" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="proto_main" />
+    <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-java:3.6.1" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="proto_main" />
+</module>

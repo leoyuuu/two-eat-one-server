@@ -1,0 +1,22 @@
+apply plugin:'java'
+apply plugin:'idea'
+apply plugin:'application'
+
+dependencies {
+    implementation project(":proto")
+    implementation project(":utils")
+
+    testImplementation 'junit:junit:4.12'
+}
+
+jar {
+    baseName = 'cj'
+    version = '1.0'
+    manifest {
+        attributes "Implementation-Title": 'cj'
+        attributes "Implementation-Version": '1.0.0'
+        attributes 'Main-Class': "com.leoyuu.teo.cj.JApp"
+    }
+}
+
+mainClassName = "com.leoyuu.teo.cj.JApp"

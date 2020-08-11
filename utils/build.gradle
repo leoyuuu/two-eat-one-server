@@ -1,0 +1,15 @@
+apply plugin:'java'
+apply plugin:'idea'
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+}
+
+jar {
+    baseName = 'utils'
+    version = '1.0'
+    manifest {
+        attributes "Implementation-Title": 'utils'
+        attributes "Implementation-Version": '1.0.0'
+    }
+}

@@ -1,0 +1,33 @@
+apply plugin:'java'
+apply plugin:'idea'
+apply plugin:'application'
+
+dependencies {
+    implementation project(":proto")
+    implementation project(":utils")
+
+    testImplementation 'junit:junit:4.12'
+}
+
+task copyDependencies(type: Copy) {
+    from configurations.runtime
+    into 'build/libs/lib'
+}
+
+jar.dependsOn(copyDependencies)
+
+jar {
+    baseName = 'client'
+    version = '1.0'
+    manifest {
+        attributes "Implementation-Title": 'client'
+        attributes "Implementation-Version": '1.0.0'
+        attributes 'Main-Class': "com.leoyuu.teo.client.App"
+    }
+
+    if (!configurations.runtime.isEmpty()) {
+        manifest.attributes('Class-Path': '. lib/' + configurations.runtime.collect { it.name }.join(' lib/'))
+    }
+}
+
+mainClassName = "com.leoyuu.teo.client.App"

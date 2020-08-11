@@ -1,0 +1,33 @@
+apply plugin:'idea'
+apply plugin:'java'
+apply plugin:'com.google.protobuf'
+
+dependencies {
+    compile 'com.google.protobuf:protobuf-java:3.6.1'
+    compile 'com.google.protobuf:protoc:3.6.1'
+    testImplementation 'junit:junit:4.12'
+}
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.0.0'
+    }
+
+    generateProtoTasks {
+        all().each { task ->
+            task.builtins {
+                java {}
+            }
+        }
+    }
+    //generatedFilesBaseDir = "$projectDir/src"
+}
+
+jar {
+    baseName = 'proto-teo'
+    version = '1.0'
+    manifest {
+        attributes "Implementation-Title": "proto-teo"
+        attributes "Implementation-Version": '1.0.0'
+    }
+}

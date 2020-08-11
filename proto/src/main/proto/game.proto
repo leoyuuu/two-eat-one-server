@@ -1,0 +1,69 @@
+syntax = "proto3";
+
+option java_package = "com.leoyuu.proto";
+option java_outer_classname = "TwoEatOnePackets";
+
+enum ChessType {
+    NoChess = 0;
+    BlackChess = 1;
+    WhiteChess = 2;
+}
+
+enum GameStatus {
+    None = 0;
+    Init = 1;
+    Playing = 2;
+    Over = 3;
+}
+
+message PushToast {
+    string msg = 1;
+}
+
+message PushUserInfo {
+    int32 uid = 1;
+    int32 gid = 2;
+}
+
+message TwoEatOneGame {
+    repeated int32 chess = 1;
+    int32 nextRole = 2;
+    int32 blackPlayer = 3;
+    int32 whitePlayer = 4;
+    int32 winner = 5;
+    GameStatus status = 6;
+}
+
+message ChessMoveContent {
+    int32 fromIndex = 1;
+    int32 toIndex = 2;
+}
+
+message PacketContent {
+    PushToast toast = 1;
+    PushUserInfo user = 2;
+    TwoEatOneGame game = 3;
+    ChessMoveContent move = 4;
+}
+
+enum CmdType {
+    UnknownCommand = 0;
+    CmdRsp = 1;
+    CmdPushToast = 2;
+    CmdPushUserInfo = 3;
+    CmdStartMatch = 4;
+    CmdCancelMatch = 5;
+    CmdEnterGame = 6;
+    CmdChessMove = 7;
+    CmdSyncGame = 8;
+    CmdPushNeedSync = 9;
+}
+
+message Packet {
+    int32 seq  = 1;
+    int32 code = 2;
+    int32 gid = 3;
+    string msg = 4;
+    CmdType type = 5;
+    PacketContent content = 6;
+}
